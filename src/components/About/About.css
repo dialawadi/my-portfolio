@@ -1,0 +1,25 @@
+@media (max-width: 600px) {
+    img {
+        width: 300px;
+    }
+
+}
+
+.about {
+    color: var( --text-primary);
+    background-color: var(--white-color);
+}
+.spikes-about {
+    position: relative;
+}
+
+.spikes-about::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(225deg, #fff 25%, transparent 25%);
+    z-index: 1;
+    background-size: 30px 30px
+}

@@ -1,0 +1,70 @@
+.home {
+    min-height: 90vh;
+    background-color: var(--section-color);
+}
+
+.home h2,
+.home p {
+    color: var(--text-primary);
+}
+
+.home h2 {
+    border-right: 1px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: control-width-h2 3s 1s steps(19) both;
+}
+
+@keyframes control-width-h2 {
+    from {
+        width: 0;
+
+    }
+
+    to {
+        width: 275px;
+
+    }
+}
+
+.home .icon {
+    padding: 8px;
+    border: 1px solid var(--text-primary);
+    transition: var(--transition);
+}
+
+.home .icon {
+    background-color: var(--text-primary);
+    color: var(--white-color);
+}
+
+.home .icon:hover {
+    color: var(--white-color);
+}
+
+.home .get-started {
+    border-color: var(--text-primary) !important;
+    color: var(--text-primary);
+    transition: var(--transition);
+
+}
+
+.home .get-started:hover {
+    background-color: var(--text-primary);
+    color: var(--white-color);
+}
+
+.spikes-home {
+    position: relative;
+}
+
+.spikes-home::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(135deg, var(--section-color) 25%, transparent 25%), linear-gradient(225deg, var(--section-color) 25%, transparent 25%);
+    z-index: 1;
+    background-size: 30px 30px
+}

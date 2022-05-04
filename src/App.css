@@ -1,0 +1,24 @@
+:root {
+    --white-color: #fff;
+    --text-primary: #925045;
+    --btn-color: #925045;
+    --transition: 0.3s;
+    --section-header: #8b2b2c;
+    --section-color: #eee;
+    --overlay-color: #925145ac;
+    --footer-background: #925045;
+}
+
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+[data-theme='dark'] {
+    --white-color: black;
+    --text-primary: white;
+    --btn-color: black;
+    --section-header: #fff;
+    --section-color: black;
+    --overlay-color: rgba(0, 0, 0, 0.649);
+    --footer-background: #fff;
+}

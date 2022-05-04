@@ -1,0 +1,16 @@
+.navbar {
+    background-color: var(--white-color) !important;
+}
+.navbar a {
+    color: var(--text-primary) !important;
+    font-weight: bold;
+}
+
+.navbar .btn,
+.navbar .btn:hover {
+    color: var(--text-primary);
+}
+
+.navbar .btn:focus {
+    box-shadow: none;
+}
