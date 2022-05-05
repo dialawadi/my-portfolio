@@ -2,6 +2,7 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { ImSun } from "react-icons/im";
 import { BsMoonStars } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import './NavBar.css';
 
 export default function NavBar({ theme, switchTheme }) {
@@ -9,9 +10,9 @@ export default function NavBar({ theme, switchTheme }) {
     <>
       <nav className="navbar navbar-expand-lg sticky-top bg-light" data-theme={theme}>
         <div className="container">
-          <a className="navbar-brand" href="/">
-            Diala Ghassan Wadi
-          </a>
+          <Link className="navbar-brand logo" to="/">
+            Diala Wadi
+          </Link>
           {theme === 'light' ? <button className="btn navbar-brand fs-3" onClick={() => switchTheme()}> <BsMoonStars /> </button> : <button className="btn navbar-brand fs-3" onClick={() => switchTheme()}> <ImSun /> </button>}
           <button
             className="btn d-lg-none"
@@ -26,9 +27,9 @@ export default function NavBar({ theme, switchTheme }) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-lg-4">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-capitalize" href="#about">

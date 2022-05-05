@@ -30,7 +30,7 @@ export const works = [
     id: 3,
     class: "col-12 col-md-6 col-lg-4 mt-4 mt-md-0",
     img: "img/bootsrap.png",
-    projects: "bootrap projects",
+    projects: "bootsrap projects",
     href: "/bootrapprojects",
   },
 ];

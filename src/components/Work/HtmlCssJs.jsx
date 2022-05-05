@@ -8,8 +8,7 @@ export default function HtmlCssJs({theme}) {
     return (
       <div className={project.class} key={project.id}>
         <div className="card">
-          <img src={project.img} className="card-img-top img-fluid" alt="templates" />
-          <div className="card-body">
+        <a href={project.href} rel="noreferrer" target="_blank"><img src={project.img} className="card-img-top img-fluid" alt="templates" /></a>           <div className="card-body">
             <a href={project.href} rel="noreferrer" target="_blank" className='text-decoration-none fw-bold'><p className='card-text'>{project.text}</p></a>
           </div>
         </div>

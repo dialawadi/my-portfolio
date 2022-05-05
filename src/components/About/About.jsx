@@ -19,7 +19,7 @@ export default function About({theme}) {
                   <span>name</span>
                   <span>age</span>
                   <span>address</span>
-                  <span>phone number</span>
+                  <span>phone</span>
                   <span>email</span>
                 </div>
                 <div className='col d-flex flex-column mt-3 gap-2 text-capitalize'>
